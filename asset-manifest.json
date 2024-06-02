@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dino-offline/static/css/main.af7a31fe.css",
+    "main.js": "/dino-offline/static/js/main.235802c7.js",
+    "static/media/background2.gif": "/dino-offline/static/media/background2.f072411ded64b8384823.gif",
+    "index.html": "/dino-offline/index.html",
+    "main.af7a31fe.css.map": "/dino-offline/static/css/main.af7a31fe.css.map",
+    "main.235802c7.js.map": "/dino-offline/static/js/main.235802c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af7a31fe.css",
+    "static/js/main.235802c7.js"
+  ]
+}
