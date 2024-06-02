@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sky, .land{
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.sky{
+    height: 100%;
+    top: 0;
+    background-position-y: 15%;
+    background-image: url(/public/images/background2.gif);
+}
+
+.land{
+    height: 100%;
+    bottom: 0;
+    /* object-fit:cover; */
+    /* background-color: aqua; */
+}
+
+.land img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.jumping-image-container{
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+
+    /* display: block;
+    transition: transform 0.5s ease-out;
+    border: none;
+    box-sizing: content-box; */
+
+}
+
+.jump {
+    animation: jumpAnimation 3s ease-out;
+  }
+  
+  @keyframes jumpAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-180px); /* Adjust the height of the jump */
+    }
+  }
+
+  #cactus{
+    z-index: 2;
+    top: 55%;
+    position: absolute;
+    right: 0;
+    animation: moveLeft 5s linear infinite; /* Adjust animation duration as needed */
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
+  }
+  
+  @keyframes moveLeft {
+    to {
+      right: calc(100% - 100px); /* Adjust the final position based on image width */
+    }
+  }
+
+  h6{
+    color: greenyellow;
+    font-size: 30px;
+    padding: 30px;
+  }
